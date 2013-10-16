@@ -15,8 +15,8 @@
  */
 
 var readline = require('readline');
+var googleapis = require('googleapis');
 
-var googleapis = require('../lib/googleapis.js');
 var OAuth2Client = googleapis.OAuth2Client;
 
 var rl = readline.createInterface({
@@ -24,7 +24,7 @@ var rl = readline.createInterface({
   output: process.stdout
 });
 
-function getAccessToken(oauth2Client, callback) {
+exports.getAccessToken = function(oauth2Client, callback) {
   // generate consent page url
   var url = oauth2Client.generateAuthUrl({
     access_type: 'offline',
@@ -38,4 +38,4 @@ function getAccessToken(oauth2Client, callback) {
       callback && callback();
     });
   });
-}
+};
