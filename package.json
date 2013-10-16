@@ -1,0 +1,19 @@
+{
+  "name": "LieDetector",
+  "version": "0.1.1",
+  "description": "leverage APIs to predict truth of political promises",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "node liedetector.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/misjoinder/LieDetector.git"
+  },
+  "author": "Misjoinder",
+  "license": "GPLv3",
+  "dependencies": {
+    "googleapis": "0.4.5"
+    , "readline": "0.0.3"
+  }
+}

@@ -31,7 +31,7 @@ of the Google Prediction API:
 
 * Create a Google Account and a project on <a href="https://cloud.google.com/console">Google Cloud Console</a>
 
-* In the API Console, enable billing, the Google Cloud Storage API, and the Google Prediction API.
+* In the API Console, enable billing, Google Cloud Storage, the Google Cloud Storage JSON API, and the Google Prediction API.
 
 Follow directions in the
 <a href="https://developers.google.com/prediction/docs/hello_world">Hello World section</a>
@@ -52,5 +52,5 @@ or a Closed-Captioning-to-Text device such as the
 to request a prediction on speech in realtime.
 
 --
-All words and code licensed under GPLv3
+All words and original code licensed under GPLv3
 --
