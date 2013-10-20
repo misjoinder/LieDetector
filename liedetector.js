@@ -4,6 +4,9 @@
 */
 
 var googleapis = require('googleapis');
+
+var SerialPort = require('serialport').SerialPort;
+
 var oauth2 = require('./google-apachelicensed-oauth2.js');
 
 var predictionAPIcalls = googleapis.discover('prediction', 'v1.6');
@@ -19,4 +22,13 @@ function returnPrediction(csv, callback) {
     });
   });
 }
-returnPrediction();
+
+var serialPort = new SerialPort("/dev/tty-usbserial1", {
+  baudrate: 115200
+}).on('data', function(data) {
+  returnPrediction(data, function(response) {
+     serialPort.write(response + "\n", function(err, results) {
+     });
+  });
+});
+

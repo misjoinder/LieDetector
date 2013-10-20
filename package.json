@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/misjoinder/LieDetector.git"
+    "url": "git://github.com/msjoinder/LieDetector.git"
   },
-  "author": "Misjoinder",
+  "author": "Msjoinder",
   "license": "GPLv3",
   "dependencies": {
     "googleapis": "0.4.5"
     , "readline": "0.0.3"
+    , "serialport": "1.2.2"
   }
 }
