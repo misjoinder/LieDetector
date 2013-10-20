@@ -1,7 +1,7 @@
 LieDetector
 ===========
 
-Predictive analytics for campaign promises
+Predicting veracity of campaign promises
 
 ## What is it for?
 
