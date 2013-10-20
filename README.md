@@ -21,9 +21,10 @@ and get a probability that they are TRUE, MISLEADING, or FALSE.
 
 ## Running LieDetector
 
-Populate statements.csv with a spreadsheet with the following three columns:
+Populate statements.csv with a spreadsheet with three columns:
 
-    TRUE/MISLEADING/FALSE , USA-DEM/USA-REP , "Text of a statement"
+    TRUE/MISLEADING/FALSE , "USA-DEM"/"USA-REP" , "Text of a statement"
+    TRUE, "USA-DEM", "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too."
 
 Follow directions in the
 <a href="https://developers.google.com/prediction/docs/getting-started">Getting Started section</a>
@@ -41,15 +42,19 @@ of the Google Prediction API:
 
 * Open the API Explorer and train a new prediction model
 
-## LieDetector in realtime
+## LieDetector realtime hardware device
 
-Hardware devices can be developed using a speech-to-text device such as
-<a href="http://www.bitsophia.com/BitVoicer.aspx">BitVoicer</a>
-or a Closed-Captioning-to-Text device such as the
-<a href="http://nootropicdesign.com/ve/">Video Experimenter Shield</a>
-. Then your app can use the 
-<a href="https://developers.google.com/prediction/docs/reference/v1.6/trainedmodels/predict">Google Prediction API</a>
-to request a prediction on speech in realtime.
+LieDetector is also an open hardware device to test politicians' statements on TV in realtime against this truth model.
+
+1. Get an Arduino Uno
+2. Get the <a href="http://nootropicdesign.com/ve/">Video Experimenter Shield</a> to collect closed-captioning text
+3. Connect a purple "lie detector" light to digital pin 13
+4. Connect a binary "two-party system" switch to digital pin 6
+
+**If you see a third party candidate speaking on TV, you'll have to modify the device!** I.E. you won't have to modify the device!
+
+Smaller, in-the-field devices could be developed using a speech-to-text device such as
+<a href="http://www.bitsophia.com/BitVoicer.aspx">BitVoicer</a>.
 
 --
 All words and original code licensed under GPLv3
