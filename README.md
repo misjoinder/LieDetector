@@ -1,7 +1,7 @@
 LieDetector
 ===========
 
-Predicting veracity of campaign promises
+Predicting veracity of broadcast speeches and campaign promises in realtime
 
 <img src="https://raw.github.com/msjoinder/LieDetector/master/layout.jpg">
 
