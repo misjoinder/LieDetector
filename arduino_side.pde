@@ -28,8 +28,8 @@ http://nootropicdesign.com/projectlab/2011/03/20/decoding-closed-captioning/
 #define BITWIDTH 5
 #define THRESHOLD 3
 
-int lieLight = 13;
-int partySwitch = 6;
+int lieLight = 6;
+int partySwitch = 13;
 
 TVout tv;
 pollserial pserial;

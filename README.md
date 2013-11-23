@@ -48,8 +48,8 @@ LieDetector is also an open hardware device to test politicians' statements on T
 
 1. Get an Arduino Uno
 2. Get the <a href="http://nootropicdesign.com/ve/">Video Experimenter Shield</a> to collect closed-captioning text
-3. Connect a purple "lie detector" light to digital pin 13
-4. Connect a binary "two-party system" switch to digital pin 6
+3. Connect a purple "lie detector" light to digital pin 6
+4. Connect a binary "two-party system" switch to digital pin 13
 
 **If you see a third party candidate speaking on TV, you'll have to modify the device!** I.E. you won't have to modify the device!
 
