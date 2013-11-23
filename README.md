@@ -15,7 +15,7 @@ What if you could analyze the transcript of a politician's speech in realtime?
 
 ## Realtime hardware device
 
-LieDetector is an open hardware device to test politicians' statements on TV in realtime against this truth model.
+LieDetector is an open hardware device to test politicians' statements on TV in realtime against a truth model.
 
 1. Get an Arduino Uno
 2. Get the <a href="http://nootropicdesign.com/ve/">Video Experimenter Shield</a> to collect closed-captioning text
@@ -35,7 +35,7 @@ is used to develop a computational model of unreliable words and phrases, simila
 to how Gmail detects spam messages. You can then feed new sentences into the model
 and get a probability that they are TRUE, MISLEADING, or FALSE.
 
-## Running LieDetector
+## Building a truth model
 
 Populate statements.csv with a spreadsheet with three columns of known statements:
 
