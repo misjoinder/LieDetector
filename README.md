@@ -3,6 +3,8 @@ LieDetector
 
 Predicting veracity of campaign promises
 
+<img src="https://raw.github.com/msjoinder/LieDetector/master/layout.jpg">
+
 ## What is it for?
 
 Ever like what a politician says on the campaign trail? Of course you have.
@@ -21,7 +23,7 @@ and get a probability that they are TRUE, MISLEADING, or FALSE.
 
 ## Running LieDetector
 
-Populate statements.csv with a spreadsheet with three columns:
+Populate statements.csv with a spreadsheet with three columns of known statements:
 
     TRUE/MISLEADING/FALSE , "USA-DEM"/"USA-REP" , "Text of a statement"
     TRUE, "USA-DEM", "We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too."
